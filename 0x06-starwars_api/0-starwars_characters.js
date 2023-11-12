@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 
 const request = require('request');
 const movieId = process.argv[2];
@@ -8,9 +8,9 @@ if (!movieId) {
   process.exit(1);
 }
 
-const url = `https://swapi.dev/api/films/${movieId}/`;
+const swapiUrl = https://swapi-api.alx-tools.com/api/planets/1;
 
-request(url, function (error, response, body) {
+request(swapiUrl, function (error, response, body) {
   if (error) {
     console.error('Error:', error);
   } else if (response.statusCode !== 200) {
